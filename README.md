@@ -1,8 +1,8 @@
 //
 
 #### End To end ML project
-This is my first Ml project so i will write a step and description of this projrct you can follow them 
-and able to create a Ml project and  experiance a new project this is common project step
+This is my first ML project so i will write a step and description of this projrct you can follow them 
+and able to create a ML project and  experiance a new project this is common project step
 
 //
 
@@ -50,3 +50,4 @@ and able to create a Ml project and  experiance a new project this is common pro
      # python -m pip install -r filename.txt----------------> for example python -m pip install -r requirements.txt
     
     after package will be created and build one file filename.egg-info
+4. after all steps happen staged all file and commit and most important push all code to github us this git push -u origin main
