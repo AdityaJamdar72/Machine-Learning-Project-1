@@ -7,6 +7,7 @@ and able to create a Ml project and  experiance a new project this is common pro
 //
 
 --------------Steps to build end to end Ml project-----------------------
+
 1. setup with Github repo this is necessary
     -- Create a new environment For project it kept clean and structured project
 
@@ -50,3 +51,21 @@ and able to create a Ml project and  experiance a new project this is common pro
      # python -m pip install -r filename.txt----------------> for example python -m pip install -r requirements.txt
     
     after package will be created and build one file filename.egg-info
+
+5. --"src" Folder -----------> it contain project logic instead of put all in single python file
+        In the src folder create another folder is "components" 
+
+    -components -------------> it contain ML project buildings Blocks 
+      > data_ingestion.py -------------> it is used to read data or import a data from database
+      > data_transformation.py ------------> it is used to transform a data like cleaning , encoding, etc.
+      > __init__.py ------------> it is used to create package 
+      > model_trainer.py ---------> used to train model
+
+    -pipeline -------------> it is used to create sequence of step to create train model automatically 
+     > __init__.py ------------> it is used to create package 
+     > predict_pipeline.py ----------> it is used to create predict pipeline 
+     > train_pipeline.py ---------> it is used to create training pipeline
+    
+    -exception.py ----------> it is used to create custom exception
+
+    -logger.py -----------> keeps a record of everything happening
