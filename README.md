@@ -62,6 +62,7 @@ and able to create a ML project and  experiance a new project this is common pro
       > __init__.py ------------> it is used to create package 
       > model_trainer.py ---------> used to train model
 
+
     -pipeline -------------> it is used to create sequence of step to create train model automatically 
      > __init__.py ------------> it is used to create package 
      > predict_pipeline.py ----------> it is used to create predict pipeline 
