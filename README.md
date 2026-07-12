@@ -71,7 +71,9 @@ and able to create a ML project and  experiance a new project this is common pro
       create custom exception
 
     -logger.py -----------> keeps a record of everything happening
+
       Create alogging file to track a log
+
 
 4. after all steps happen staged all file and commit and most important push all code to github us this git push -u origin main
 
