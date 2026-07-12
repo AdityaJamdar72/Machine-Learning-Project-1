@@ -1,9 +1,10 @@
 import sys
 
 def error_message_detail(error, error_details: sys):
+    
     #error ---------> tells current exception 
 
-    _, _, exc_tb = error_details.exc_info() #return information about current exception and it can be sys.error_details
+    _, _, exc_tb = error_details.exc_info()    #return information about current exception and it can be sys.error_details
 
     file_name = exc_tb.tb_frame.f_code.co_filename
 
