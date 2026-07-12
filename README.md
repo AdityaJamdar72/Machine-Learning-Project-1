@@ -51,7 +51,7 @@ and able to create a ML project and  experiance a new project this is common pro
      # python -m pip install -r filename.txt----------------> for example python -m pip install -r requirements.txt
     
     after package will be created and build one file filename.egg-info
-<<<<<<< HEAD
+
 
 5. --"src" Folder -----------> it contain project logic instead of put all in single python file
         In the src folder create another folder is "components" 
@@ -68,8 +68,10 @@ and able to create a ML project and  experiance a new project this is common pro
      > train_pipeline.py ---------> it is used to create training pipeline
     
     -exception.py ----------> it is used to create custom exception
+      create custom exception
 
     -logger.py -----------> keeps a record of everything happening
-=======
+      Create alogging file to track a log
+
 4. after all steps happen staged all file and commit and most important push all code to github us this git push -u origin main
->>>>>>> 3fc43522809b45c2b112bf98600d3c9640bb456c
+
