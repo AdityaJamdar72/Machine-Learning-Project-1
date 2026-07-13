@@ -75,6 +75,14 @@ and able to create a ML project and  experiance a new project this is common pro
 
       Create alogging file to track a log
 
+6. Create a notebok folder  and add two notebbok .ipynb for EDA and Model_train
 
-4. after all steps happen staged all file and commit and most important push all code to github us this git push -u origin main
+7. Create Data Ingestion implement DataIngestionConfig and DataIngestion give path for train,test,raw data path 
+
+8. Create A Data Transformation File Implement two classes Data_transformationConfig and Datatransformation 
+
+9. Create a Model_trainer.py to train model
+
+
+At the End of doing all Code  steps happen staged all file and commit and most important push all code to github us this git push -u origin main
 

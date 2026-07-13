@@ -2,6 +2,8 @@ import os
 import dill
 from src.exception import CustomException
 import sys
+from sklearn.metrics import r2_score
+
 
 def save_object(file_path, obj):
     try:
@@ -14,3 +16,24 @@ def save_object(file_path, obj):
 
     except Exception as e:
         raise CustomException(e, sys)
+    
+
+def evaluate_model(X_train,X_test,y_train,y_test,models:dict):
+    
+    report={}
+    for name,model in models.items():
+        
+        model.fit(X_train,y_train)
+
+        y_train_pred=model.predict(X_train)
+
+        y_test_pred=model.predict(X_test)
+
+        r2_train=r2_score(y_train,y_train_pred)
+
+        r2_test=r2_score(y_test,y_test_pred)
+
+        report[name]=r2_test
+
+    return report
+

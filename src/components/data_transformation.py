@@ -64,7 +64,7 @@ class Transformation:
             input_feature_train_df=train_df.drop(columns=[target_col])
             output_feature_train_df=train_df[target_col]
           
-            ## Create Test feature
+            ## Create Test feature 
             input_feature_test_df=test_df.drop(columns=[target_col])
             output_feature_test_df=test_df[target_col]
         
