@@ -35,6 +35,10 @@ class Modeltrain:
                 "Adaboost": AdaBoostRegressor(),
                 "Gradient Boost":GradientBoostingRegressor(),
                 "XG Boost":XGBRegressor()}
+            
+            params={
+                "LinearRegression"
+            }
         
             model_report:dict=evaluate_model(X_train=X_train,X_test=X_test,y_train=y_train,y_test=y_test,models=models)
     

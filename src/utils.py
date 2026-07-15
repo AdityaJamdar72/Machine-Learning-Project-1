@@ -37,3 +37,10 @@ def evaluate_model(X_train,X_test,y_train,y_test,models:dict):
 
     return report
 
+def load_object(fil_path):
+    try:
+        with open(fil_path,"rb") as file_obj:
+            return dill.load(file_obj)
+    except Exception as e:
+        raise CustomException(e)
+        
