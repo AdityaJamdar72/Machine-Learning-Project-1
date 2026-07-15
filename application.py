@@ -1,12 +1,12 @@
 from flask import Flask,request,render_template
 from src.pipeline.predict_pipeline import CustomData,predict_pipe
 app=Flask(__name__)
-application=app
-@application.route("/")
+
+@app.route("/")
 def show_data():
     return render_template("index.html")
 
-@application.route("/predict",methods=["GET","POST"])
+@app.route("/predict",methods=["GET","POST"])
 def predict_data():
     if request.method=="GET":
         return render_template("home.html")
